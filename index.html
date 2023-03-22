@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        * {
+        padding: 0;
+        margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        body {
+            background-color: #ccc;
+            font-family: Poppins;
+            color: #666;
+            font-size: 15px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1:nth-child(1){
+            font-weight: 200;
+        }
+        header h1:nth-child(2){
+            font-weight: 600;
+        }
+        header p {
+            margin: 20px auto;
+            width: 40%;
+        }
+        img {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+        }
+        section .section-main article {
+            background-color: #fff;
+            width: 350px;
+            height: 250px;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 30px;
+            box-shadow: #000 5px 5px 15px -8px;
+            box-sizing: border-box;
+            position: relative;
+            font-weight: 400;
+        }
+        section .section-main {
+            max-width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+        section .section-main article:nth-child(1) {
+            border-top: #45d3d3 5px solid;
+            order: 1;
+            margin-top: 175px;
+        }
+        section .section-main article:nth-child(2) {
+            border-top: #ea5353 5px solid;
+            order: 2;
+        }
+        section .section-main article:nth-child(3) {
+            border-top: #fcaf4a 5px solid;
+            order: 4;
+            margin-top: -145px
+        }
+        section .section-main article:nth-child(4) {
+            border-top: #549ef2 5px solid;
+            order: 3;
+            margin-top: 175px;
+        }
+        @media screen and (min-width: 1550px) {
+            .section-main {
+                width: 70%;
+            }
+        }
+        @media screen and (max-width: 1250px) {
+            section .section-main article:nth-child(1){
+                order: 1;
+                margin: 10px
+            }
+            section .section-main article:nth-child(2){
+                order: 2;
+                margin: 10px
+            }
+            section .section-main article:nth-child(3){
+                order: 3;
+                margin: 10px
+            }
+            section .section-main article:nth-child(4){
+                order: 4;
+                margin: 10px
+            }
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Reliable, efficient delivery</h1>
+        <h1>Powered by Technology</h1>
+        
+        <p>
+            Our Artificial Intelligence powered tools use millions of project data points
+            to ensure that your project is successful
+        </p>
+    </header>
+
+    <section>
+        <div class="section-main">
+            <article>
+                <h3>Supervisor</h3>
+                <p>Monitors activity to identify project roadblocks</p>
+                <img src="images/icon-supervisor.svg" alt="Supervisor Icon">
+            </article>
+            
+            <article>
+                <h3>Team Builder</h3>
+                <p>Scans our talent network to create the optimal team for your project</p>
+                <img src="images/icon-team-builder.svg" alt="Team Builder Icon">
+            </article>
+            
+            <article>
+                <h3>Karma</h3>
+                <p>Regularly evaluates our talent to ensure quality</p>
+                <img src="images/icon-karma.svg" alt="Karma Icon">
+            </article>
+            
+            <article>
+                <h3>Calculator</h3>
+                <p>Uses data from past projects to provide better delivery estimates</p>
+                <img src="images/icon-calculator.svg" alt="Calculator Icon">
+            </aticle>
+        </div>
+    </section>
+
+    <footer>
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Your Name Here</a>.
+        </p>
+    </footer>
+</body>
+</html>
