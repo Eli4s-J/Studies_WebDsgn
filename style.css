@@ -1,0 +1,194 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Verdana';
+}
+.center {
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #212343;
+}
+header img {
+    padding: 15px;
+}
+#container-home {
+    background-image: url("../images/header_bg.png");
+    width: 100%;
+    height: 557px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container-home .lists {
+    background-color: #212343aa;
+    color: #fff;
+    width: 50%;
+    min-height: 300px;
+    float: left;
+    margin: 100px 0 0 40px;
+    padding: 40px;
+}
+#container-home .lists ul {
+    list-style: inside;
+    padding-top: 20px;
+}
+#container-home .form {
+    background-color: #fff;
+    color: #b4b4b4;
+    width: 40%;
+    height: 587px;
+    float: right;
+    position: relative;
+    top: -15px;
+    border: 8px solid #aaa;
+}
+#container-home .form h2 {
+    padding: 20px;
+}
+#container-home .form label {
+    display: block;
+    padding: 10px 0px 5px 20px;
+}
+#container-home .form input[required] {
+    margin-left: 20px;
+    width: 90%;
+    height: 40px;
+    outline: none;
+    font-family: 'Verdana';
+    font-size: 18px;
+}
+#container-home .form span {
+    margin: 40px 0 40px 20px;
+    display: block;
+}
+#container-home .form input[type="submit"] {
+    margin: 0 auto;
+    display: block;
+    padding: 20px 80px;
+    background-color: #446;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+#container-home .form input[type="submit"]:hover {
+    background-color: #335;
+}
+.image {
+    position: relative;
+    top: -32px;
+    left: -32px;
+    margin-left: 50%;
+}
+#container-pre {
+    background-image: linear-gradient(to bottom, #224e, #bbb, #bbb);
+    width: 100%;
+}
+#container-pre > .article {
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    padding: 20px 0;
+}
+#container-pre > .article h3 {
+    padding-bottom: 20px;
+}
+#container-pre > .article p {
+    text-align: left;
+    text-indent: 60px;
+    word-spacing: 3px;
+}
+#container-pos {
+    background-image: linear-gradient(to bottom, #bbb, #ddd, #fff);
+}
+#container-pos h2 {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    padding: 40px 0;
+}
+#container-pos .cell-block {
+    display: inline-block;
+    text-align: center;
+    width: calc(100% / 3 - 4px);
+    padding: 40px 40px;
+}
+#container-pos .cell-block h4 {
+    padding: 20px 0;
+}
+hr {
+    width: 90%;
+    border: 3px #446 solid ;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+footer p {
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+/*--------------------------------
+@Media Queires
+----------------------------------*/
+@media screen and (max-width: 1048px) {
+    header img{
+        margin-left: 50%;
+        position: relative;
+        left: -90px;
+        background-repeat: no-repeat;
+    }
+    #container-home {
+        width: 100%;
+        padding: 20px 0;
+        height: auto;
+    }
+    #container-home .lists {
+        width: 80%;
+        margin: 20px auto;
+        float: none;
+        height: 0 auto;
+    }
+    #container-home .form {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px 0;
+        float: none;
+        position: static;
+    }
+    #container-pre > .article{
+        width: 90%;
+    }
+    #container-pos .cell-block {
+        margin: 0 auto;
+        display: inline-block;
+        width: calc(50% - 4px);
+        padding: 40px 40px;
+    }
+    #container-pos .cell-block:nth-child(2) {
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 822px) {
+    #container-home .lists {
+        width: 100%;
+    }
+    #container-home .form {
+        width: 80%;
+    }
+    #container-pos .cell-block {
+        margin: 0 auto;
+        display: block;
+        width: 90%;
+    }
+}
